@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - EcoGreen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>EcoGreen</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Discover our carefully curated collection of sustainable everyday essentials</p>
+            </div>
+        </section>
+
+        <section class="product-filters">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="home">Home & Garden</button>
+                    <button class="filter-btn" data-filter="personal">Personal Care</button>
+                    <button class="filter-btn" data-filter="kitchen">Kitchen & Dining</button>
+                    <button class="filter-btn" data-filter="clothing">Clothing</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-catalog">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Home & Garden Products -->
+                    <div class="product-card" data-category="home">
+                        <div class="product-image">
+                            <i class="fas fa-bottle-water"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bamboo Water Bottles</h3>
+                            <p class="product-description">Sustainable, BPA-free water bottles made from bamboo fiber. Keep your drinks fresh while reducing plastic waste.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">BPA-Free</span>
+                                <span class="feature-tag">Dishwasher Safe</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$24.99</span>
+                                <span class="original-price">$34.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="home">
+                        <div class="product-image">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Seed Collection</h3>
+                            <p class="product-description">Start your own organic garden with our heirloom seed varieties. Includes tomatoes, herbs, and lettuce.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Heirloom</span>
+                                <span class="feature-tag">Non-GMO</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$19.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="home">
+                        <div class="product-image">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>LED Solar Lights</h3>
+                            <p class="product-description">Illuminate your garden with solar-powered LED lights. Weather-resistant and automatically activated at dusk.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Solar Powered</span>
+                                <span class="feature-tag">Weather Resistant</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$39.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Personal Care Products -->
+                    <div class="product-card" data-category="personal">
+                        <div class="product-image">
+                            <i class="fas fa-soap"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Natural Soap Bars</h3>
+                            <p class="product-description">Handcrafted soap bars with organic ingredients and essential oils. Gentle on skin and the environment.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Organic</span>
+                                <span class="feature-tag">Cruelty-Free</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$8.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="personal">
+                        <div class="product-image">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bamboo Toothbrush Set</h3>
+                            <p class="product-description">Biodegradable bamboo toothbrushes with soft bristles. Complete with travel case made from recycled materials.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Biodegradable</span>
+                                <span class="feature-tag">Soft Bristles</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$15.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="personal">
+                        <div class="product-image">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Skincare Set</h3>
+                            <p class="product-description">Complete skincare routine with organic cleanser, toner, and moisturizer. Suitable for all skin types.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">All Natural</span>
+                                <span class="feature-tag">Dermatologist Tested</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$49.99</span>
+                                <span class="original-price">$69.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Kitchen & Dining Products -->
+                    <div class="product-card" data-category="kitchen">
+                        <div class="product-image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bamboo Utensil Set</h3>
+                            <p class="product-description">Portable bamboo utensil set with fork, knife, spoon, and chopsticks. Perfect for on-the-go dining.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Portable</span>
+                                <span class="feature-tag">Dishwasher Safe</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$12.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="kitchen">
+                        <div class="product-image">
+                            <i class="fas fa-blender"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Glass Food Storage Set</h3>
+                            <p class="product-description">Airtight glass containers for food storage. BPA-free lids and microwave-safe for convenient meal prep.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">BPA-Free</span>
+                                <span class="feature-tag">Microwave Safe</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$34.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="kitchen">
+                        <div class="product-image">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Reusable Coffee Filters</h3>
+                            <p class="product-description">Stainless steel mesh coffee filters that eliminate the need for paper filters. Compatible with most coffee makers.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Stainless Steel</span>
+                                <span class="feature-tag">Universal Fit</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$18.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Clothing Products -->
+                    <div class="product-card" data-category="clothing">
+                        <div class="product-image">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Cotton Tote Bags</h3>
+                            <p class="product-description">Durable shopping bags made from 100% organic cotton. Perfect for groceries, books, or everyday use.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Organic Cotton</span>
+                                <span class="feature-tag">Machine Washable</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$12.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="clothing">
+                        <div class="product-image">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sustainable T-Shirt</h3>
+                            <p class="product-description">Comfortable t-shirt made from organic cotton and recycled polyester blend. Available in multiple colors.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Organic Blend</span>
+                                <span class="feature-tag">Fair Trade</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$28.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="clothing">
+                        <div class="product-image">
+                            <i class="fas fa-hat-cowboy"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Hemp Baseball Cap</h3>
+                            <p class="product-description">Stylish baseball cap made from sustainable hemp fiber. UV protection and moisture-wicking properties.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">UV Protection</span>
+                                <span class="feature-tag">Moisture Wicking</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$22.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for eco-tips and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoGreen</span>
+                    </div>
+                    <p>Making sustainable living accessible to everyone.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Home & Garden</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Kitchen & Dining</a></li>
+                        <li><a href="#">Clothing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Green Street, Eco City</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ecogreen.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoGreen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product filtering functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                productCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Initialize product cards with transition
+        productCards.forEach(card => {
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        });
+    </script>
+</body>
+</html>
